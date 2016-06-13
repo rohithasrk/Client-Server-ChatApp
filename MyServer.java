@@ -5,7 +5,7 @@ import java.util.*;
 class Server{
 	public static void main(String args[]) throws Exception{
 		Scanner in=new Scanner(System.in);
-		ServerSocket ServSoc=new ServerSocket(8000);			//Server waiting for a connection to be made
+		ServerSocket ServSoc=new ServerSocket(8000);			//Server waiting for a connection-request to be made
 		Socket s=ServSoc.accept();					//To establish a connection
 		DataInputStream Din=new DataInputStream(s.getInputStream());
 		DataOutputStream Dout=new DataOutputStream(s.getOutputStream());
