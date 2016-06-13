@@ -14,7 +14,7 @@ class Server{
 		while(!str.equals("end")){
 			str=Din.readUTF();
 			System.out.println("Client says: "+str);
-			str2=in.readLine();
+			str2=in.nextLine();
 			Dout.writeUTF(str2);
 			Dout.flush();	
 		}
